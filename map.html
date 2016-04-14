@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A D3 map</title>
+  <link rel="stylesheet" href="css/map.css"/>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="http://d3js.org/d3-queue.v2.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="../lib/crossfilter/crossfilter.js"></script>
+  
+  <!--<script src="data/boston_regions_zip_codes_rdw.json"></script>-->
+</head>
+<body>
+	<div class="backg">
+    		<div class="intro_text">
+          <h2>HUBWAY BIKE SHARING NETWORK<br>Directionality and Frequency of Trips</h2>
+            <div class="author">
+              <h5><strong>Patrick J. O'Donnel and Muhe Yang</strong><br>NEU Information Design and Visualization, 2016</h5>
+            </div>
+        </div>
+
+        <div class="titles">
+          <h4>Select Station on the Map</h4>
+          <h4>Select Trips to Analyze</h4>
+        </div>
+    		
+        <div id="plot"> </div>
+        <div id="right"> 
+            <div id="buttons"> 
+              <div class="start_end">
+                <button type="button" id="se1">Starting from</button>
+                <button type="button" id="se2">Ending at</button>
+              </div>
+              <div class="station_select"> 
+                <select id="dropdown"> </select>
+              </div>
+            </div>
+            <div id="chart"> </div>
+            <div id="buttons2">
+              <div class="time_of_day">
+                <button type="button" id="tod1">Morning</button>
+                <button type="button" id="tod2">Afternoon</button>
+                <button type="button" id="tod3">Evening</button>
+              </div>
+              <div class="duration">
+                <button type="button" id="dur1">Short</button>
+                <button type="button" id="dur2">Long</button>
+              </div>
+
+            </div>
+        </div>
+  		<script src="scripts/map.js"></script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+#canvas {
+	max-width: 80vw;
+	padding-top: 4px;
+	margin-right: auto;
+	margin-left: auto;
+	border-width: 4px;
+}
+
+.container{
+	background: #efefef;
+	height: 500px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+
+	
+}
+
+body 
+{
+	background-color: yellow;
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+.neighborhoods {
+  fill: yellow;
+}
+
+.active {
+  fill: orange;
+}
+
